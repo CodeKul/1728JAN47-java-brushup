@@ -1,0 +1,3 @@
+rootProject.name = 'brushup-java'
+include 'mod-one'
+

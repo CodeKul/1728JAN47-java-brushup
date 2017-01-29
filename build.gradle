@@ -1,0 +1,44 @@
+group 'com.codekul.java'
+version '1.0.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eu.appsatori.fatjar'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'eu.appsatori:gradle-fatjar-plugin:0.3'
+    }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile 'traer.physics:physics:3.0'
+}
+
+fatJar {
+    manifest {
+        attributes 'Main-Class': 'com.codekul.java.brushup.Main'
+    }
+}
+
+task myRun(type: JavaExec) {
+    classpath sourceSets.main.runtimeClasspath
+    main = "com.codekul.java.brushup.Main"
+}
+
+
+
+
+//gradlew taskName
