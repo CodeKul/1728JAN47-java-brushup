@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/brushup-java.iml" filepath="$PROJECT_DIR$/.idea/modules/brushup-java.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/brushup-java_main.iml" filepath="$PROJECT_DIR$/.idea/modules/brushup-java_main.iml" group="brushup-java" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/brushup-java_test.iml" filepath="$PROJECT_DIR$/.idea/modules/brushup-java_test.iml" group="brushup-java" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/concepts/concepts.iml" filepath="$PROJECT_DIR$/.idea/modules/concepts/concepts.iml" group="concepts" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/concepts/concepts_main.iml" filepath="$PROJECT_DIR$/.idea/modules/concepts/concepts_main.iml" group="concepts" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/concepts/concepts_test.iml" filepath="$PROJECT_DIR$/.idea/modules/concepts/concepts_test.iml" group="concepts" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mod-one/mod-one.iml" filepath="$PROJECT_DIR$/.idea/modules/mod-one/mod-one.iml" group="mod-one" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mod-one/mod-one_main.iml" filepath="$PROJECT_DIR$/.idea/modules/mod-one/mod-one_main.iml" group="mod-one" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mod-one/mod-one_test.iml" filepath="$PROJECT_DIR$/.idea/modules/mod-one/mod-one_test.iml" group="mod-one" />
