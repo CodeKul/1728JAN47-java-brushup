@@ -6,15 +6,20 @@ import com.codekul.java.brushup.classesandobject.Wire;
 import com.codekul.java.brushup.exceptionhandling.Coffee;
 import com.codekul.java.brushup.inheritance.Device;
 import com.codekul.java.brushup.inheritance.Mobile;
+import com.codekul.java.brushup.innerclasses.Outer;
 import com.codekul.java.brushup.interfaces.Bike;
+import com.codekul.java.brushup.interfaces.GpsListener;
 import com.codekul.java.brushup.interfaces.Human;
+import com.codekul.java.brushup.threading.CupCake;
+import com.codekul.java.brushup.threading.Kite;
 
+import java.awt.*;
 /**
  * Created by aniruddha on 29/1/17.
  */
 public class Main {
     public static void main(String[] args) {
-        exceptionHandling();
+        threading();
     }
 
     public static void classesAndObject() {
@@ -63,5 +68,40 @@ public class Main {
         }
 
         coffee.cappuccino(1, 0, 10); //
+    }
+
+    private static void innerClasses() {
+        Outer outer = new Outer();
+        Outer.PublicInner publicInner = outer.new PublicInner();
+
+        Outer.StaticInner staticInner = new Outer.StaticInner();
+
+        outer.outersMethod();
+
+        GpsListener listener = new GpsListener() {
+            @Override
+            public String location() {
+                return null;
+            }
+        };
+
+        listener = () -> "hello"; //lambda
+        listener = Main::myMethod; // method ref
+
+        Button btn = new Button();
+        btn.addActionListener(e -> {});
+    }
+
+    private static String myMethod() {
+        return "hello";
+    }
+
+    private static void threading() {
+
+        CupCake cupCake = new CupCake();
+        cupCake.start();
+
+        Kite kite = new Kite();
+        kite.fly();
     }
 }
