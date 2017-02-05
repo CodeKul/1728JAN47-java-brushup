@@ -3,7 +3,10 @@ package com.codekul.java.brushup;
 import com.codekul.java.brushup.abstractclass.Animal;
 import com.codekul.java.brushup.abstractclass.Tiger;
 import com.codekul.java.brushup.classesandobject.Wire;
+import com.codekul.java.brushup.collection.Bag;
 import com.codekul.java.brushup.exceptionhandling.Coffee;
+import com.codekul.java.brushup.generics.Liquid;
+import com.codekul.java.brushup.generics.Water;
 import com.codekul.java.brushup.inheritance.Device;
 import com.codekul.java.brushup.inheritance.Mobile;
 import com.codekul.java.brushup.innerclasses.Outer;
@@ -19,7 +22,7 @@ import java.awt.*;
  */
 public class Main {
     public static void main(String[] args) {
-        threading();
+        collections();
     }
 
     public static void classesAndObject() {
@@ -103,5 +106,26 @@ public class Main {
 
         Kite kite = new Kite();
         kite.fly();
+    }
+
+    private static void generics() {
+
+        Water water = new Water();
+        water.waterify("this is my name");
+        water.waterify(10);
+        water.waterify(new Button());
+        water.waterify(new CupCake());
+
+        Liquid<String> liquid = new Liquid<>();
+        liquid.liquify("Hello");
+
+        Liquid<Boolean> liquidBool = new Liquid<>();
+        liquidBool.liquify(true);
+    }
+
+    private static void collections() {
+        Bag bag = new Bag();
+        //bag.cities();
+        bag.fruits();
     }
 }
