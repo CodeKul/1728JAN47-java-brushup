@@ -8,9 +8,7 @@ public class Wire {
     private int length;
     private String type;
 
-    public int length(){
-        return length;
-    }
+    public int length(){ return length; }
 
     public void length(int length) {
         this.length = length;

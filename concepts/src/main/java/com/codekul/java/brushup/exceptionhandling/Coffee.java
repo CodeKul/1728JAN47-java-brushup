@@ -8,7 +8,7 @@ public class Coffee {
     private int formula;
 
     public void espresso(int sugar, int bean) throws Exception{
-        formula = sugar/bean;
+        formula = sugar/bean; // new ArithmeticException()
         if(formula <= 0) throw new BadCoffeeException(formula);
         System.out.printf("\n Ur Espresso is " + (formula > 2 ? "Good " : "bitter"));
     }

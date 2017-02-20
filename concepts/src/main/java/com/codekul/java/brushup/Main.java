@@ -75,6 +75,7 @@ public class Main {
 
     private static void innerClasses() {
         Outer outer = new Outer();
+
         Outer.PublicInner publicInner = outer.new PublicInner();
 
         Outer.StaticInner staticInner = new Outer.StaticInner();

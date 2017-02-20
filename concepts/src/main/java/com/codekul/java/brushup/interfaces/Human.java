@@ -5,12 +5,8 @@ package com.codekul.java.brushup.interfaces;
  */
 public /*abstract*/ class Human implements GpsListener{
 
-    public void walk() {
-
-    }
+    public void walk() {  }
 
     @Override
-    public String location() {
-        return "Home`";
-    }
+    public String location() { return "Home`"; }
 }

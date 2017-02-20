@@ -5,9 +5,7 @@ package com.codekul.java.brushup.interfaces;
  */
 public class Bike implements GpsListener{
 
-    public void speedUp() {
-
-    }
+    public void speedUp() {  }
 
     @Override
     public String location() {
